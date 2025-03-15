@@ -14,11 +14,13 @@
 # limitations under the License.
 
 #
-# This is based on Generic.kl but swaps ESCAPE (1) with GRAVE (41)
-# because by default ESC requires Fn + Shift modifiers
+# This is based on Generic.kl but assigns
+#   HOME to ESCAPE (1, uses Fn + Shift)
+#   GRAVE to HOME (172, uses Fn)
+#   ESCAPE to GRAVE (41, no modifier)
 #
 
-key 1     GRAVE
+key 1     HOME
 key 2     1
 key 3     2
 key 4     3
@@ -189,7 +191,7 @@ key 168   MEDIA_REWIND
 key 169   CALL
 # key 170 "KEY_ISO"
 key 171   MUSIC
-key 172   HOME
+key 172   GRAVE
 key 173   REFRESH
 # key 174 "KEY_EXIT"
 # key 175 "KEY_MOVE"
